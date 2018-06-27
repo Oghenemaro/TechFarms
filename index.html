@@ -15,7 +15,7 @@
 
 <body>
     <div class="container-fluid" style="padding: 0px;">
-        <nav class=" navbar navbar-expand-lg navbar-light bg-light fixed-top  col-sm-12">
+        <nav class=" navbar navbar-expand-lg navbar-light fixed-top col-sm-12">
             <div class="col-sm-12 col-lg-3">
                 <a class="navbar-brand" href="index.html">
                     <h3>TechFarms</h3>
@@ -26,23 +26,26 @@
                 </button>
             </div>
 
-            <div class="collapse navbar-collapse col-sm-12 col-lg-9" id="navbarContent">
-                <div class="col-sm-12" id="menu_div">
-                    <ul class="navbar-nav mt-2 mt-lg-0" id="navbar">
+            <div class="collapse navbar-collapse col-sm-12 col-md-9" id="navbarContent">
+                <div class="col-sm-12 col-md-8" id="menu_div">
+                    <ul class="navbar-nav mt-2 mt-lg-0 text-center" id="navbar">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Investors News</a>
+                            <a class="nav-link" href="index.html">Invest</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Invest</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Blog</a>
+                            <a class="nav-link" href="services.html">Investors_News </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="services.html">Markets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact_Us</a>
                         </li>
                     </ul>
+                </div>
+                <div class="col-sm-12 col-md-4" id="nav_auth_buttons_div">
+                    <button class="btn btn-outline-success btn-md">Sign Up</button>
+                    <button class="btn btn-outline-success btn-md mr-2">Sign In</button>
                 </div>
             </div>
         </nav>
@@ -57,14 +60,18 @@
                     left: 300px;
                     z-index: 5;
                 }
+
+                hr {
+                    width: 50%;
+                }
             </style>
 
             <div class="row col-sm-12 mt-3" id="homeWelcomeSearch">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
                     <div class="col-sm-12 text-center">
-                        <h3>Discovering New Ways To Enhance The Way We Farm</h3>
-                        <p>Become a part of the journey by investing together on what we eat to enjoy returns on healty living</p>
+                        <h3 class="mb-4">Discovering New Ways To Enhance The Way We Farm</h3>
+                        <p class="mb-5">Become a part of the journey by investing together on what we eat to enjoy returns on healty living</p>
                     </div>
                     <div class="col-sm-12 text-center">
                         <div class="form-group" style="width: 100%; ">
@@ -78,7 +85,7 @@
             <div id="homeWelcomeCarousel" class="carousel slide col-sm-12" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/timess.jpg" alt="First slide">
+                        <img class="d-block w-100" src="images/home_intro.jpg" alt="First slide">
                     </div>
                 </div>
             </div>
@@ -94,22 +101,23 @@
                 </div>
             </div>
 
-            <div class="row homeServices">
-                <div class="col-sm-10 col-md-3">
+            <div class="row homeServices mb-5">
+                <div class="col-sm-10 col-md-6 col-lg-3">
                     <!-- <i class="fas fa-dot-circle fa-2x mt-1 mr-3 " style="float: left;"></i> -->
                     <div class="card border-light mb-3 cards" style="max-width: 18rem;">
                         <div class="card-header">
                             <h4>Empowering Farmers</h4>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">We empower farmers of any scale</p>
+                            <p class="card-text">We empower farmers of any scale by providing them with the neccessary information to produce
+                                to maximum quantity at the same time providing the farming inputs through investment</p>
                             <span>
                                 <a href="services#meetGreet.html">Find Out More</a>
                             </span>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-10 col-md-3">
+                <div class="col-sm-10 col-md-6 col-lg-3">
                     <!-- <i class="fas fa-dot-circle fa-2x mt-1 mr-3" style="float: left;"></i> -->
                     <div class="card border-light mb-3" style="max-width: 18rem;">
                         <div class="card-header">
@@ -117,14 +125,14 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">We engage in intensive research, development and acquisition of adequate technologies to fit
-                                our farmers needs</p>
+                                our farmers needs at their particular scale</p>
                             <span>
                                 <a href="services#meetGreet.html">Find Out More</a>
                             </span>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-10 col-md-3">
+                <div class="col-sm-10 col-md-6 col-lg-3">
                     <!-- <i class="fas fa-dot-circle fa-2x mt-1 mr-3" style="float: left;"></i> -->
                     <div class="card border-light mb-3" style="max-width: 18rem;">
                         <div class="card-header">
@@ -139,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-10 col-md-3">
+                <div class="col-sm-10 col-md-6 col-lg-3">
                     <!-- <i class="fas fa-dot-circle fa-2x mt-1 mr-3 " style="float: left;"></i> -->
                     <div class="card border-light mb-3 cards" style="max-width: 18rem;">
                         <div class="card-header">
@@ -156,7 +164,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" style="background-color: #F2F3F4">
                 <div class="col-sm-12">
                     <h1 style="text-align: center; " class="mt-5">
                         <span>Invest Today</span>
@@ -166,22 +174,31 @@
             </div>
 
             <div class="row homeInvestDivs">
-                <div class="card col-sm-12 col-md-3 homeInvestCards" style="width: 18rem;">
-                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card col-sm-12 col-md-6 col-lg-3 mb-5 ml-5 homeInvestCards">
+                    <img class="card-img-top" src="images/poultry-farm.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h3 class="card-text homeInvestCardsText">Poultry</h3>
+                        <h5 class="mt-3" style="font-weight: 700; font-size: 20px">#50,000</h5>
+                        <br>
+                        <button class="btn btn-success mt-3 homeInvestCardsButton">Invest</button>
                     </div>
                 </div>
-                <div class="card col-sm-12 col-md-3 homeInvestCards" style="width: 18rem;">
-                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card col-sm-12 col-md-6 col-lg-3 homeInvestCards">
+                    <img class="card-img-top" src="images/piglet-farm.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h3 class="card-text homeInvestCardsText ">Pigry</h3>
+                        <h5 class="mt-3" style="font-weight: 700; font-size: 20px">#50,000</h5>
+                        <br>
+                        <button class="btn btn-success mt-3 homeInvestCardsButton">Invest</button>
                     </div>
                 </div>
-                <div class="card col-sm-12 col-md-3 homeInvestCards" style="width: 18rem;">
-                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card col-sm-12 col-md-6 col-lg-3 homeInvestCards">
+                    <img class="card-img-top" src="images/stockfishbig.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h3 class="card-text homeInvestCardsText">Stock Fish</h3>
+                        <h5 class="mt-3" style="font-weight: 700; font-size: 20px">#50,000</h5>
+                        <br>
+                        <button class="btn btn-success mt-3 homeInvestCardsButton">Invest</button>
                     </div>
                 </div>
             </div>
@@ -201,12 +218,12 @@
                 </div>
             </div>
 
-            <div class="row homeServices">
+            <div class="row homeServices mb-5">
                 <div class="card-deck col-sm-12">
-                    <div class="card col-sm-12 col-md-3">
-                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                    <div class="card col-sm-12 col-md-3 homeBlogCards">
+                        <img class="card-img-top" src="" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Statistics On Bird Consumption</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
                                 content is a little bit longer.</p>
                         </div>
@@ -214,31 +231,31 @@
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
-                    <div class="card col-sm-12 col-md-3">
+                    <div class="card col-sm-12 col-md-3 homeBlogCards">
                         <img class="card-img-top" src=".../100px180/" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Maize Report</h5>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
-                    <div class="card col-sm-12 col-md-3">
-                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                    <div class="card col-sm-12 col-md-3 homeBlogCards">
+                        <img class="card-img-top" src="images/catfish_market.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
-                                card has even longer content than the first to show that equal height action.</p>
+                            <h5 class="card-title">The Catfish Market</h5>
+                            <p class="card-text">The Stockfish market is a rich market, being a preservative method of fish, people are incline
+                                to purchased an store for use over a period. It's market is estimated to be #160,000,000</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
-                    <div class="card col-sm-12 col-md-3">
+                    <div class="card col-sm-12 col-md-3 homeBlogCards">
                         <img class="card-img-top" src=".../100px180/" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Solving The Tomatoes Scarcity</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
                                 card has even longer content than the first to show that equal height action.</p>
                         </div>
@@ -302,7 +319,7 @@
                                 <form action="" method="" class="form-inline" style="float: right;">
                                     <div class="input-group mt-5">
                                         <input type="text" placeholder="Subscribe to emails" value="" name="" class="form-control" />
-                                        <button class="btn btn-primary ml-2">Subscribe</button>
+                                        <button class="btn btn-success ml-2">Subscribe</button>
                                     </div>
                                 </form>
                             </div>
