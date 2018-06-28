@@ -1,61 +1,71 @@
-body{
+body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.container-fluid{
+.container-fluid {
     overflow: hidden;
-    margin: 0;
+    /* margin: 0; */
     /* padding: 0; */
 }
 
 /* navigation section begins */
-nav{
+
+nav {
     width: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: transparent;
+    color: #000000;
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+    padding: 30px;
 }
 
-nav h3{
-    /* color: white; */
+#navbarContent {
+    width: 100%;
+    padding: 0px;
 }
 
-ul#navbar {
-    margin-left: 50px;
-    font-size: 17px;
+#navbarContent div {
+    float: right;
 }
 
-
-ul#navbar li {
-    margin-left: 10px;
-    color: white;
+#menu_div {
+    width: 100%;
 }
 
-#menu_div{
-    width: 100px;
-}
-
-#nav_auth_buttons_div{
+#nav_auth_buttons_div {
     padding: 10px;
 }
 
-#nav_auth_buttons_div button{
-    float: right;
+#nav_auth_buttons_div button {
     color: white;
+    float: right;
+}
+
+ul#navbar {
+    font-size: 20px;
+    width: 100%;
+    text-align: right;
+}
+
+ul#navbar li {
+    float: right;
+    margin-left: 10px;
 }
 
 /* navigation ends */
 
 /* carousel */
 
-#homeWelcomeSearch{
+#homeWelcomeSearch {
     z-index: 2;
     position: absolute;
     margin: 0px;
     padding: 0px;
-    top: 40%;
+    top: 50%;
 }
 
-#homeWelcomeSearch h3{
+#homeWelcomeSearch h3 {
     font-weight: 800;
 }
 
@@ -63,125 +73,131 @@ ul#navbar li {
     font-size: 20px;
 }
 
-#homeWelcomeCarousel{
+#homeWelcomeCarousel {
     height: 45em;
 }
 
-.container-fluid #homeWelcomeCarousel{
-	margin: 0px;
+.container-fluid #homeWelcomeCarousel {
+    margin: 0px;
     overflow: visible;
     padding: 0px;
-} 
-
-.carousel-inner > .carousel-item >img{
-    height : 700px;
-    width : 100%;
-  }
-
-  .carousel-caption h1{
-      font-size: 50px;
-  }
-
-  /* ends */
-
-  /* home about section */
-
-  .aboutDiv{
-      margin: 0px;
-      /* border: 1px solid red; */
-      width: 100%;
-      padding: 30px;
-  }
-
-  #aboutUsDiv{
-      width: 500px;
-      height: 400px;
-      text-align: center;
-      margin-left: 20px;
-      /* border: 1px solid red; */
-      width: 100%;
-  }
-
-  #aboutUs{
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 25px;
-      font-style: italic;
-  } 
-
-  #aboutService{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-  }
-
-  /* ends */
-
-  /* home service section & cards */
-
-  .homeServices{
-      padding-top: 4em;
-      padding-left: 4em;
-      padding-right: 5em;
-  }
-
-  .homeServices .card{
-      margin-top: 4px;
 }
 
+.carousel-inner>.carousel-item>img {
+    height: 700px;
+    width: 100%;
+}
 
-  .homeServices i{
+.carousel-caption h1 {
+    font-size: 50px;
+}
+
+/* ends */
+
+/* home about section */
+
+.aboutDiv {
+    margin: 0px;
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 30px;
+}
+
+#aboutUsDiv {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+#aboutUs {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#aboutService {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* ends */
+
+/* home buttons */
+
+.btn-success {
+    border-radius: 0px;
+}
+
+/* home service section & cards */
+
+.homeServices {
+    padding-top: 4em;
+    padding-left: 2em;
+    padding-right: 3em;
+}
+
+.homeServices .card {
+    margin-top: 4px;
+}
+
+.homeServices i {
     float: right;
     color: #F39C12;
-  }
+}
 
-  .homeInvestDivs{
-    padding-top: 4em;
-    padding-left: 5em;
-    /* padding-right: 5em; */
+.homeInvestDivs {
+    padding-top: 3%;
+    padding-left: 6%;
+    padding-right: 0%;
     background-color: #F2F3F4;
-  }
+}
 
 .homeInvestDivs .homeInvestCards {
-    margin-right: 50px;
-    width: 20rem;
-    height: 500px;;
-    padding: 0;
+    padding: 0px;
+    height: 400px;
+    margin: 40px;
 }
 
 .homeInvestDivs .homeInvestCards img {
-    height: 250px;;
+    height: 200px;
 }
 
 .homeInvestCards:hover {
-
+    width: 100%;
+    /* height: 100%; */
+    background-color: #000000;
+    opacity: 0.6;
+    color: white;
+    box-shadow: 2px 2px 12px #B3B6B7;
+    border: none;
 }
 
-.homeInvestCardsText{
-} 
+.homeInvestCardsText {}
 
-.homeInvestCardsButton{
+.homeInvestCardsButton {
     /* display: none; */
 }
 
+.card {
+    
+}
 
-  .card{
-      box-shadow: 2px 2px 12px #B3B6B7;
-  }
+.homeBlogCards {
+    padding: 0;
+}
 
-  .homeBlogCards{
-      padding: 0;
-  }
-  
-  .homeBlogCards img{
-      height: 200px;
-  }
-
-
-
+.homeBlogCards img {
+    height: 200px;
+}
 
 /* ends here */
 
 /* Home Quick Service Access */
-.quickServiceRow{
+
+.quickServiceRow {
     position: absolute;
     top: 15%;
     left: 15%;
@@ -191,15 +207,17 @@ ul#navbar li {
     opacity: 0.5;
 }
 
-.quickServiceRow h1{
+.quickServiceRow h1 {
     font-size: 9em;
     color: #F39C12;
     opacity: 1;
 }
+
 /* ends here */
 
 /* contact page */
-.officeDetails i{
+
+.officeDetails i {
     color: #F39C12;
 }
 
@@ -207,69 +225,67 @@ ul#navbar li {
     margin: 20px;
 }
 
-.hrClientInfo{
+.hrClientInfo {
     width: 100%;
 }
 
-.hrClientInfo hr{
+.hrClientInfo hr {
     padding: 0px;
 }
 
-textarea{
+textarea {
     width: 90%;
 }
 
 /* contact ends here */
 
-
 /* footer */
-footer{
-    background-color:   #323031;
+
+footer {
+    background-color: #323031;
     color: whitesmoke;
     width: 100%;
-  }
- 
-  .list-div{
-    /* border: 1px solid red; */
-  }
-
- .list-div ul {
-     margin: 0px;
-     padding: 0px;
-     
 }
 
- .list-div ul li {
-      list-style: none;
-      font-size: 15px;
-  }
-  
-  .list-div ul li a{
+.list-div {
+    /* border: 1px solid red; */
+}
+
+.list-div ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.list-div ul li {
+    list-style: none;
+    font-size: 15px;
+}
+
+.list-div ul li a {
     color: #B3B6B7;
-  }
+}
 
-  footer h1 a{
+footer h1 a {
     color: white;
-  }
+}
 
-  footer .form-div input{
-      float: left;
-  }
-  
-  footer .input-group{
-      float: left;
-  }
+footer .form-div input {
+    float: left;
+}
 
-  .socialMediaLogos ul li{
-      display: inline;
-      margin-right: 50px;
-  }
+footer .input-group {
+    float: left;
+}
 
-  .copyright{
-      color: #5F6A6A;
-  }
+.socialMediaLogos ul li {
+    display: inline;
+    margin-right: 50px;
+}
 
-  .contactForm{
-      padding: 0px;
-      
-  }
+.copyright {
+    color: #5F6A6A;
+}
+
+.contactForm {
+    padding: 0px;
+}
