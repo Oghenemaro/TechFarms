@@ -141,6 +141,9 @@ ul#navbar li {
 
 .homeServices .card {
     margin-top: 4px;
+    height: 350px;
+    box-shadow: 2px 2px 12px #B3B6B7;
+    /* border: none; */
 }
 
 .homeServices i {
@@ -158,7 +161,8 @@ ul#navbar li {
 .homeInvestDivs .homeInvestCards {
     padding: 0px;
     height: 400px;
-    margin: 40px;
+    margin: 25px;
+    border: none;
 }
 
 .homeInvestDivs .homeInvestCards img {
@@ -171,22 +175,14 @@ ul#navbar li {
     background-color: #000000;
     opacity: 0.6;
     color: white;
-    box-shadow: 2px 2px 12px #B3B6B7;
+    /* box-shadow: 2px 2px 12px #B3B6B7; */
     border: none;
-}
-
-.homeInvestCardsText {}
-
-.homeInvestCardsButton {
-    /* display: none; */
-}
-
-.card {
-    
 }
 
 .homeBlogCards {
     padding: 0;
+    border: none;
+    box-shadow: 2px 2px 12px #B3B6B7;
 }
 
 .homeBlogCards img {
