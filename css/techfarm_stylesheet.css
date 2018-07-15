@@ -4,8 +4,6 @@ body {
 
 .container-fluid {
     overflow: hidden;
-    /* margin: 0; */
-    /* padding: 0; */
 }
 
 /* navigation section begins */
@@ -13,16 +11,21 @@ body {
 nav {
     width: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #000000;
     position: absolute;
     top: 0%;
     z-index: 2;
-    padding: 30px;
+    padding: 10px;
+}
+
+nav h3{
+    color: #F2F3F4;
+    font-weight: 800;
 }
 
 #navbarContent {
-    width: 100%;
+    width: 90%;
     padding: 0px;
+    
 }
 
 #navbarContent div {
@@ -43,14 +46,19 @@ nav {
 }
 
 ul#navbar {
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     text-align: right;
 }
 
-ul#navbar li {
+#navbar li {
     float: right;
     margin-left: 10px;
+}
+
+#navbar li a{
+    color: #F2F3F4;
+    font-weight: 800;
 }
 
 /* navigation ends */
@@ -62,15 +70,18 @@ ul#navbar li {
     position: absolute;
     margin: 0px;
     padding: 0px;
-    top: 50%;
+    top: 45%;
+    /* left: 2%; */
 }
 
-#homeWelcomeSearch h3 {
-    font-weight: 800;
+#homeWelcomeSearch h2 {
+    font-weight: bolder;
+    color: #F2F3F4;
 }
 
 #homeWelcomeSearch p {
     font-size: 20px;
+    color: #F2F3F4;
 }
 
 #homeWelcomeCarousel {
@@ -85,8 +96,10 @@ ul#navbar li {
 
 .carousel-inner>.carousel-item>img {
     height: 700px;
-    width: 100%;
+    max-width: none !important;
+    /* width: 100%; */
 }
+
 
 .carousel-caption h1 {
     font-size: 50px;
@@ -127,9 +140,6 @@ ul#navbar li {
 
 /* home buttons */
 
-.btn-success {
-    border-radius: 0px;
-}
 
 /* home service section & cards */
 
@@ -141,7 +151,6 @@ ul#navbar li {
 
 .homeServices .card {
     margin-top: 4px;
-    height: 350px;
     box-shadow: 2px 2px 12px #B3B6B7;
     /* border: none; */
 }
@@ -151,18 +160,21 @@ ul#navbar li {
     color: #F39C12;
 }
 
-.homeInvestDivs {
-    padding-top: 3%;
-    padding-left: 6%;
-    padding-right: 0%;
-    background-color: #F2F3F4;
+.homeServicesCards{
+    height: 300px;
 }
 
-.homeInvestDivs .homeInvestCards {
-    padding: 0px;
+.homeInvestRow{
+    background-color: #F2F3F4;
+    padding-top: 4em;
+    padding-left: 2.5em;
+    padding-right: 3em;
+}
+
+.homeInvestRow .card {
     height: 400px;
-    margin: 25px;
     border: none;
+    margin-left: 20px;
 }
 
 .homeInvestDivs .homeInvestCards img {
@@ -183,6 +195,7 @@ ul#navbar li {
     padding: 0;
     border: none;
     box-shadow: 2px 2px 12px #B3B6B7;
+    height: 500px;
 }
 
 .homeBlogCards img {
