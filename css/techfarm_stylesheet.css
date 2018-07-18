@@ -144,15 +144,14 @@ ul#navbar {
 /* home service section & cards */
 
 .homeServices {
-    padding-top: 4em;
-    padding-left: 2em;
-    padding-right: 3em;
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 2em;
 }
 
 .homeServices .card {
     margin-top: 4px;
     box-shadow: 2px 2px 12px #B3B6B7;
-    /* border: none; */
 }
 
 .homeServices i {
@@ -164,17 +163,20 @@ ul#navbar {
     height: 300px;
 }
 
+/* home invest section */
+
 .homeInvestRow{
     background-color: #F2F3F4;
-    padding-top: 4em;
+    padding-top: 3em;
     padding-left: 2.5em;
-    padding-right: 3em;
+    padding-right: 2em;
 }
 
 .homeInvestRow .card {
     height: 400px;
     border: none;
     margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 .homeInvestDivs .homeInvestCards img {
