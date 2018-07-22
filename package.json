@@ -1,0 +1,23 @@
+{
+  "name": "farmsconnect",
+  "version": "1.0.0",
+  "description": "This is platform designed to connect farmers to micro-investments through the general public",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.16.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oghenemaro/TechFarms.git"
+  },
+  "author": "Oghenemaro Onokpise",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Oghenemaro/TechFarms/issues"
+  },
+  "homepage": "https://github.com/Oghenemaro/TechFarms#readme"
+}
