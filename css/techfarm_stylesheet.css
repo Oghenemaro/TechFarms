@@ -185,7 +185,7 @@ ul#navbar {
     height: 200px;
 }
 
-.homeInvestCards:hover {
+.homeInvestRow .card:hover {
     width: 100%;
     /* height: 100%; */
     background-color: #000000;
