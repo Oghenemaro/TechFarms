@@ -14,6 +14,12 @@
 </head>
 
 <body>
+    
+        <style>
+                a {
+                    color: white;
+                }
+            </style>
     <div class="container-fluid" style="padding: 0px;">
         <nav class="navbar-default navbar-expand-lg navbar-light">
             <div class="row col-sm-12" style="padding: 0px; margin: 0px;">
@@ -45,8 +51,8 @@
                         </ul>
                     </div>
                     <div class="col-sm-12 col-md-12 mt-md-3 mt-lg-0 offset-lg-1 col-lg-3" id="nav_auth_buttons_div" style="padding: 0px; width: 95%;">
-                        <button class="btn btn-success btn-md" data-toggle="modal" data-target="#accountSettingModal">Sign Up</button>
-                        <button class="btn btn-success btn-md mr-2" >Sign In</button>
+                        <button class="btn btn-success btn-md"><a href="pages/authenticate.html">Sign Up</a></button>
+                        <button class="btn btn-success btn-md mr-2"><a href="pages/authenticate.html">Sign Up</a></button>
                     </div>
                 </div>
             </div>
@@ -193,7 +199,7 @@
 
             
         <!-- Sign Up  Modal -->
-        <div class="modal fade" id="accountSettingModal" tabindex="-1" role="dialog" aria-labelledby="accountSettingModal" aria-hidden="true">
+        <!-- <div class="modal fade" id="accountSettingModal" tabindex="-1" role="dialog" aria-labelledby="accountSettingModal" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -238,7 +244,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+        
 
             <div class="row homeInvestRow mb-5 text-center" style="background-color: #F2F3F4;">
                 <div class="card col-sm-12 col-md-6 col-lg-3 ml-sm-0 ml-md-0">
