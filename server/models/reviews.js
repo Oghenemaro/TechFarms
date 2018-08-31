@@ -1,40 +1,40 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const investments = sequelize.define('investments', {
+  const reviews = sequelize.define('reviews', {
+    review: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    liked: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    disliked: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
     users: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     farms: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    amountPaid: {
-      type: DataTypes.TEXT,
-      allowNull: false
-    },
-    ROI: {
-      type: DataTypes.TEXT,
-      allowNull: false
-    },
-    totalEarnings: {
       type: DataTypes.TEXT,
       allowNull: false
     },
   });
-  investments.associate = (models) => {
-    investments.belongsTo(models.users, {
-      foreign: 'id',
-      onUPDATE: 'CASCADE',
-      onDELETE: 'CASCADE'
-    });
-  };
-  investments.associate = (models) => {
-    investments.belongsTo(models.farms, {
+  reviews.associate = (models) => {
+    reviews.belongsTo(models.users, {
       foreignkey: 'id',
       onUPDATE: 'CASCADE',
       onDELETE: 'CASCADE'
     });
-  }
-  return investments;
+  };
+  reviews.associate = (models) => {
+    reviews.belongsTo(models.farms, {
+      foreignkey: 'id',
+      onUPDATE: 'CASCADE',
+      onDELETE: 'CASCADE'
+    });
+  };
+  return reviewss;
 };

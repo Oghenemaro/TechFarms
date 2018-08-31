@@ -1,15 +1,45 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('reviewsses', {
+    return queryInterface.createTable('reviews', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      firstname: {
-        type: Sequelize.TEXT
+      review: {
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
+      liked: {
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
+      disliked: {
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
+      farm: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        onUPDATE: 'CASCADE',
+        onDELETE: 'CASCADE',
+        reference: {
+          model: 'farms',
+          key: 'id'
+        },
+        users: {
+          type: Sequelize.INTEGER,
+          allowNull: false,
+          onUPDATE: 'CASCADE',
+          onUPDATE: 'CASCADE',
+          references: {
+            model: 'users',
+            key: 'id'
+          }
+        }
+
       },
       createdAt: {
         allowNull: false,
@@ -22,6 +52,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('reviewsses');
+    return queryInterface.dropTable('reviews');
   }
 };

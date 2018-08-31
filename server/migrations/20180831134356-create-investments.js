@@ -8,8 +8,37 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      firstname: {
-        type: Sequelize.TEXT
+      user: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        onUPDATE: 'CASCADE',
+        onDELETE: 'CASCADE',
+        references: {
+          model: 'users',
+          key: 'id'
+        }
+      },
+      farm: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        onUPDATE: 'CASCADE',
+        onDELETE: 'CASCADE',
+        references: {
+          model: 'farms',
+          key: 'id'
+        }
+      },
+      amountPaid: {
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
+      ROI: {
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
+      totalEarnings: {
+        type: Sequelize.TEXT,
+        allowNull: false
       },
       createdAt: {
         allowNull: false,

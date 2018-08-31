@@ -1,10 +1,20 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const products = sequelize.define('products', {
-    firstname: DataTypes.TEXT
-  }, {});
-  products.associate = function(models) {
-    // associations can be defined here
+    livestock: {
+      type: Sequelize.TEXT,
+      allowNull: false
+    },
+  });
+  products.associate = (models) => {
+    products.hasMany(models.farms, {
+      foreignkey: 'id'
+    });
+  };
+  products.associate = (models) => {
+    products.hasMany(models.product-type, {
+      foreignkey: 'id'
+    });
   };
   return products;
 };

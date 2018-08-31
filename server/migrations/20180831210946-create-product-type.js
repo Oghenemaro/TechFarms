@@ -1,22 +1,22 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('farms', {
+    return queryInterface.createTable('product-types', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      farmname: {
+      types: {
         type: Sequelize.TEXT,
         allowNull: false
       },
-      address: {
+      quantity: {
         type: Sequelize.TEXT,
         allowNull: false
       },
-      farmType: {
+      product: {
         type: Sequelize.INTEGER,
         allowNull: false,
         onUPDATE: 'CASCADE',
@@ -25,14 +25,6 @@ module.exports = {
           model: 'products',
           key: 'id'
         }
-      },
-      size: {
-        type: Sequelize.TEXT,
-        allowNull: false
-      },
-      insuranceStatus: {
-        type: Sequelize.TEXT,
-        allowNull: false
       },
       createdAt: {
         allowNull: false,
@@ -45,6 +37,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('farms');
+    return queryInterface.dropTable('product-types');
   }
 };
