@@ -8,11 +8,8 @@
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "body-parser": "^1.18.3",
-    "chai": "^4.1.2",
-    "chai-http": "^4.2.0",
-    "eslint": "^5.4.0",
     "express": "^4.16.3",
-    "mocha": "^5.2.0",
+    "jsonwebtoken": "^8.3.0",
     "morgan": "^1.9.0",
     "nodemon": "^1.18.4",
     "nyc": "^13.0.1",
@@ -21,10 +18,18 @@
     "sequelize": "^4.38.0"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.2.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^5.2.0",
     "webpack": "^4.16.1"
   },
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha --exit --timeout 1000 --compilers js:babel-register .server/test/test || true",
+    "test": "nyc --reporter=html --reporter=text mocha --exit --timeout 1000 --compilers js:babel-register ./server/test/test.js || true",
     "start": "nodemon --exec babel-node app.js"
   },
   "repository": {

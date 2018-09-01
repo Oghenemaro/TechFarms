@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const productType = sequelize.define('product-type', {
+  const productType = sequelize.define('productType', {
     types: {
       type: DataTypes.TEXT,
       allowNull: false
@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    product: {
+    products: {
       type: DataTypes.INTEGER,
       allowNull: false
     },

@@ -36,5 +36,5 @@ module.exports = (sequelize, DataTypes) => {
       onDELETE: 'CASCADE'
     });
   };
-  return reviewss;
+  return reviews;
 };

@@ -2,7 +2,7 @@
 module.exports = (sequelize, DataTypes) => {
   const products = sequelize.define('products', {
     livestock: {
-      type: Sequelize.TEXT,
+      type: DataTypes.TEXT,
       allowNull: false
     },
   });
@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     });
   };
   products.associate = (models) => {
-    products.hasMany(models.product-type, {
+    products.hasMany(models.productType, {
       foreignkey: 'id'
     });
   };
