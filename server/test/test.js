@@ -12,7 +12,7 @@ describe('Test Data', () => {
     beforeEach(() => {
         userData = {
             username: 'marowinsei',
-            password: 'marogeorge',
+            password: 'marojudge',
             firstname: 'maro',
             lastname: 'george',
             email: 'marogeorge@gmail.com',
@@ -46,15 +46,25 @@ describe('Test Data', () => {
                     res.should.be.an.instanceOf(object);
                 });
             });
-            // it('should authenticate a user', () => {
-            //     chai.request(app)
-            //     .post('/api/v1/auth/signin')
-            //     .send(userData)
-            //     .end((err, res) => {
-            //         res.should.have.status(404);
-            //         // res.should.be.an.instanceOf(object);
-            //     });
-            // });
+            it('should authenticate a user', () => {
+                chai.request(app)
+                .post('/api/v1/auth/signin')
+                .send(userData)
+                .end((err, res) => {
+                    res.should.have.status(200);
+                    res.should.be.an.instanceOf(object);
+                });
+            });
+        });
+        context('Show data', () => {
+            it('show display all available farms', () => {
+                chai.request(app)
+                .get('/api/v1/farms')
+                .end( (err, res) => {
+                    res.should.have.status(200);
+                    res.should.be.an.instanceOf(object);
+                });
+            });
         });
     });
 });

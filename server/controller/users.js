@@ -20,22 +20,23 @@ class users {
     }
     static login(req, res){
         const {
-            email, password
+            username, password
         } = req.body;
         user.findOne({
-            attributes: ['id', 'username', 'password', 'email '],
+            attributes: ['id', 'username', 'password', 'firstname', 'lastname', 'email', 'cell'],
             where: {
-                email: email
+                username: username
             }
         }).then((userFound) => {
+            console.log(userFound);
             if(userFound === ' '){
                 return res.status(400).send({Status: 'failed', message: 'Account not found, signup to create an account'});
-            } else if (userFound.password !== password){
+            } else if (userFound.password !== password || userFound.username !== username){
                 return res.status(401).send({Status: 'failed', message: 'Incorrect username or password'});
             }
             const token = jwt.sign({id: userFound.id, email: userFound.email, username: userFound.username}, secretkey, {expiresIn: 2000});
-            return res.status(401).send({Status: 'failed', message: 'Incorrect username or password'});
-        }).catch(() => res.status(401).send({Status: 'failed', message: 'A problem occured, please try again later'}));
+            return res.status(200).send({Status: 'Successful', message: 'Account Created', Token: token});
+        }).catch((err) => res.status(401).send({Status: 'failed', message: err}));
     }
 }
 
