@@ -1,6 +1,8 @@
 import express from 'express';
-import Middleware from '../middleware/CheckInputs';
+import CheckInputs from '../middleware/CheckInputs';
+import LoginStatus from '../middleware/LoginStatus';
 import Users from '../controller/users';
+import Farms from '../controller/farms';
 
 const router = express.Router();
 
@@ -8,7 +10,8 @@ router.get('/api', (req, res) => res.status(200).send({
     message: 'welcome to farms connect'
 })); 
 
-router.post('/api/v1/auth/signup', Users.createUser);
-// router.post('/api/v1/auth/signin', Middleware.checkCreateInputs, Users.login);
+router.post('/api/v1/auth/signup',  CheckInputs.checkCreateInputs, Users.createUser);
+router.post('/api/v1/auth/signin', CheckInputs.checkLoginInputs, Users.login);
+router.get('/api/v1/farms', Farms.viewFarms);
 
 module.exports = router;
