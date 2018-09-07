@@ -8,7 +8,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      user: {
+      userID: {
         type: Sequelize.INTEGER,
         allowNull: false,
         onUPDATE: 'CASCADE',
@@ -18,7 +18,7 @@ module.exports = {
           key: 'id'
         }
       },
-      farm: {
+      farmID: {
         type: Sequelize.INTEGER,
         allowNull: false,
         onUPDATE: 'CASCADE',

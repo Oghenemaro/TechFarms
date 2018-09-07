@@ -13,11 +13,11 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    users: {
+    userID: {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    farms: {
+    farmID: {
       type: DataTypes.TEXT,
       allowNull: false
     },

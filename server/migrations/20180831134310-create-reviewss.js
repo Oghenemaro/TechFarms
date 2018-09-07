@@ -20,7 +20,7 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false
       },
-      farm: {
+      farmID: {
         type: Sequelize.INTEGER,
         allowNull: false,
         onUPDATE: 'CASCADE',
@@ -29,7 +29,7 @@ module.exports = {
           model: 'farms',
           key: 'id'
         },
-        users: {
+        userID: {
           type: Sequelize.INTEGER,
           allowNull: false,
           onUPDATE: 'CASCADE',
@@ -39,7 +39,6 @@ module.exports = {
             key: 'id'
           }
         }
-
       },
       createdAt: {
         allowNull: false,

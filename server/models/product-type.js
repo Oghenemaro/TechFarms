@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    products: {
+    productID: {
       type: DataTypes.INTEGER,
       allowNull: false
     },

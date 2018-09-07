@@ -1,11 +1,11 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const investments = sequelize.define('investments', {
-    users: {
+    userID: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    farms: {
+    farmID: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
   });
   investments.associate = (models) => {
     investments.belongsTo(models.users, {
-      foreign: 'id',
+      foreignkey: 'id',
       onUPDATE: 'CASCADE',
       onDELETE: 'CASCADE'
     });

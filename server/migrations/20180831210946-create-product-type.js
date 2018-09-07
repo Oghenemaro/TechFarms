@@ -16,7 +16,7 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false
       },
-      product: {
+      productID: {
         type: Sequelize.INTEGER,
         allowNull: false,
         onUPDATE: 'CASCADE',

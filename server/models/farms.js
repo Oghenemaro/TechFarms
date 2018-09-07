@@ -1,6 +1,12 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const farms = sequelize.define('farms', {
+    id: {
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
+    },
     farmname: {
       type: DataTypes.TEXT,
       allowNull: false
@@ -17,14 +23,14 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    farmType: {
+    productID: {
       type: DataTypes.INTEGER,
       allowNull: false,
     }
   });
   farms.associate = (models) => {
     farms.belongsTo(models.products, {
-      foreignkey: 'id',
+      foreignKey: 'productID',
       onUPDATE: 'CASCADE',
       onDELETE: 'CASCADE'
     });

@@ -12,6 +12,18 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false
       },
+      minimumInvestment: {
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
+      percentageReturn: {
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
+      duration: {
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
