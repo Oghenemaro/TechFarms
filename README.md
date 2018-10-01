@@ -1,4 +1,4 @@
-#FarmsConnect
+# FarmsConnect
 FarmsConnect is an application designed to create agricultural inclusion. The platform aims to create a designation where people can invest in the production of farm products available and earn a healty return on investment over a specified period. 
 
 # Motivation
