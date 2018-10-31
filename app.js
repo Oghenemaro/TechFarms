@@ -18,7 +18,8 @@ const port = parseInt(process.env.port, 10) || 7000;
 app.set('port, port');
 
 const server = http.createServer(app);
-server.listen(port, () => console.log('Application running on port 7000'));
+
+server.listen(port, () => console.log(`Application running on port 7000.`));
 
 module.exports = app;
 

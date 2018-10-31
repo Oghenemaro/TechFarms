@@ -3,6 +3,8 @@
 {
     "root": true,
     "extends": "airbnb-base",
+    "parser": "babel-eslint",
+    "plugins": [ "jsx-ally", "import", "react"],
     "env": {
       "node": true,
       "es6": true,
