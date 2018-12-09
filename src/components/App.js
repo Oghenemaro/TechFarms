@@ -5,6 +5,11 @@ import { ModalHeader } from  'react-bootstrap';
 import { ModalTitle } from  'react-bootstrap';
 import { ModalBody } from  'react-bootstrap';
 import { ModalFooter } from  'react-bootstrap';
+import { ShowText } from './presentation/buttonComponent';
+import { ButtonComponent } from './presentation/buttonComponent';
+
+
+
 import $ from 'jquery';
 import Popper from 'popper.js';
 
@@ -19,7 +24,7 @@ class App extends Component {
         this.handleClose = this.handleClose.bind(this);
         this.handleShow = this.handleShow.bind(this);
 
-        this.state = { show: false};
+        this.state = { show: false, what: "component showing"};
     }
 
     handleClose() {
@@ -35,8 +40,9 @@ class App extends Component {
         return (
             <div>
                 <h1>My React App!</h1>
-                <Button bsStyle="primary" bsSize="large" onClick={this.handleShow}>Show Modal</Button>
-                
+                <ShowText what={this.state.what} />
+                <ButtonComponent bsStyle={"primary"} onClick={this.handleShow}  buttonLabel = {"Show Modal"}/>
+             
                 <Modal show={this.state.show} onHide={this.handleClose}>
                 <ModalHeader>
                     <ModalTitle>Create Account</ModalTitle>
@@ -54,10 +60,10 @@ class App extends Component {
                     </form>
                 </ModalBody>
                 <ModalFooter>
-                <Button bsStyle="danger" bsSize="large" onClick={this.handleClose}>Close</Button>
-                <Button bsStyle="primary" bsSize="large">Save Changes</Button>
+                <ButtonComponent bsStyle={"danger"} onClick={this.handleClose} buttonLabel = {"Close"}/>
+                <ButtonComponent bsStyle={"success"}  buttonLabel = {"Save Changes"} />
                 </ModalFooter>
-                </Modal>
+                </Modal> 
             </div>
         );
     }
